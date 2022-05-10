@@ -1,0 +1,201 @@
+i {
+    color: #555555;
+    font-size: 1rem;
+}
+.app_container .hero_component-review {
+    /* padding: 0 5rem; */
+    padding-top: 5rem;
+}
+.hero_component-review .contents span {
+    padding: 0 5rem;
+    font-size: 0.65rem;
+    font-family: "DM Sans";
+    color: #444444;
+}
+.hero_component-review .contents .blog_title {
+    padding: 0 5rem;
+    margin: 0.75rem 0rem;
+    width: 60%;
+    font-size: 2.3rem;
+    font-family: "Montserrat";
+}
+/* .hero_component-review .contents .blog_contents {
+    padding: 0 5rem;
+    width: 70%;
+    margin-top: 1.8rem;
+}
+.hero_component-review .contents .blog_contents .blog_content {
+    font-size: 0.75rem;
+    width: 100%;
+    font-family: "DM Sans";
+    font-weight: 500;
+    color: #444444;
+}
+.hero_component-review .contents .blog_contents .blog_content p {
+    margin-top: 0.5rem;
+} */
+.hero_image-wrapper {
+    width: calc(100% - 10rem);
+    height: 400px;
+    margin-top: 1rem;
+}
+.hero_image-wrapper figure {
+    width: 100%;
+    height: 400px;
+    background-color: red;
+}
+.hero_image-wrapper figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.hero_image-wrapper figure figcaption {
+    padding-left: 6rem;
+    font-size: 0.7rem;
+    font-family: 'DM Sans';
+}
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.8rem;
+    padding: 0 2rem;
+    font-family: 'DM Sans';
+}
+main .social_media {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-right: 1rem;
+}
+main .social_media > div {
+    height: 30px;
+    width: 30px;
+    background-color: #ebbf96;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+main .main_contents {
+    width: 70%;
+    margin-left: 1rem;
+}
+main .main_contents .blog_content {
+    margin-bottom: 1rem;
+    /* font-size: 0.75rem; */
+    width: 100%;
+    font-family: "DM Sans";
+    font-weight: 500;
+    color: #444444;
+
+}
+.main_contents .blog_content h2 {
+    font-size: 1.35rem;
+    font-family: 'Montserrat';
+}
+.main_contents .blog_content p {
+    font-size: 0.75rem;
+    margin-top: 0.2rem;
+}
+main .main_contents .blocker blockquote {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+}
+main  aside {
+   margin-left: 4rem;
+   margin-top: 4rem;
+}
+main aside ul {
+    list-style-type: none;
+}
+main aside ul li {
+    margin-bottom: 0.65rem;
+    font-family: 'DM Sans';
+    font-size: 1rem;
+}
+
+.btnNavigate {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* margin-top: rem; */
+}
+.btnNavigate button {
+    padding: 0.7rem 1.5rem;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid var(--variant-color);
+    border-radius: 4px;
+    font-family: "DM Sans";
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    transition: all 500ms ease;
+}
+.btnNavigate button:last-child {
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero_component-review .contents .blog_title ,
+    .btnNavigate{
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .app_container .hero_component-review {
+        margin-top: 5rem;
+        padding: 0rem;
+    }
+    .hero_component-review .contents span,
+    .hero_component-review .contents .blog_title,
+    .btnNavigate {
+        padding: 0 1rem;
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .hero_image-wrapper {
+        width: 100%;
+    }
+    .hero_component-review .contents .blog_title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    main .main_contents,
+    .btnNavigate {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero_component-review .contents .blog_title {
+        width: 100%;
+    }
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0.5rem;
+    }
+    main .main_contents {
+        /* margin: 1rem; */
+        margin: 1rem 0;
+        padding: 0 0.55rem;
+        width: 100%;
+    }
+    main .social_media {
+        display: none;
+    }
+}
